@@ -1,0 +1,16 @@
+[
+{
+  "modid": "hardcoreplusgen",
+  "name": "Hardcore+ Generator",
+  "description": "This mod hacks into the default Vanilla world generator and tests your skills in Minecraft. Do not expect anything good in your world with this mod.",
+  "version": "0.1.0 SPB",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["DarknesGaming"],
+  "credits": "You, for playing this mod and supporting me through some time.",
+  "logoFile": "icon.png",
+  "screenshots": [],
+  "dependencies": []
+}
+]
