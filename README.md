@@ -18,3 +18,5 @@ For IntelliJ IDEA users, import the project. Make sure you select the build.grad
 On Eclipse, switch your workspace to /eclipse/, which is made after running the above commands in the root directory. In IntelliJ IDEA, you need to edit your run configurations.
 
 If you're using IntelliJ IDEA, go to Run > Edit Configurations. Then change "Use classpath of module" to "<mod_name>_main", where <mod_name> is the name of the mod.
+
+This mod uses Minecraft 1.11.2 with Minecraft Forge 1.11.2-13.20.0.2228.
