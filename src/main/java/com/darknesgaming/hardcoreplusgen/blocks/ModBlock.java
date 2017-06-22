@@ -14,4 +14,13 @@ public class ModBlock extends Block {
         setResistance(resistance);
         setHarvestLevel(tool, harvest);
     }
+    // This constructor is only used for anything that either needs to tool or cannot be harvested.
+    public ModBlock(Material mat, String name, CreativeTabs tabs, float hardness, float resistance) {
+        super(mat);
+        setUnlocalizedName(name);
+        setRegistryName(name);
+        setCreativeTab(tabs);
+        setHardness(hardness);
+        setResistance(resistance);
+    }
 }
