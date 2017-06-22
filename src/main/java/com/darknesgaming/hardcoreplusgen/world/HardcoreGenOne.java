@@ -1,5 +1,6 @@
 package com.darknesgaming.hardcoreplusgen.world;
 
+import com.darknesgaming.hardcoreplusgen.handlers.BlockHandler;
 import com.google.common.base.Predicate;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.block.state.pattern.BlockMatcher;
@@ -36,6 +37,7 @@ public class HardcoreGenOne implements IWorldGenerator {
         addOreSpawn(Blocks.TNT.getDefaultState(), world, rand, chunkX, chunkZ, 16, 16, 8, 24, 0, 60, BlockMatcher.forBlock(Blocks.STONE));
         addOreSpawn(Blocks.FLOWING_LAVA.getDefaultState(), world, rand, chunkX, chunkZ, 16, 16, 12, 10, 0, 60, BlockMatcher.forBlock(Blocks.STONE));
         addOreSpawn(Blocks.MAGMA.getDefaultState(), world, rand, chunkX, chunkZ, 16, 16, 24, 70, 40, 180, BlockMatcher.forBlock(Blocks.GRASS));
+        addOreSpawn(BlockHandler.hcactus.getDefaultState(), world, rand, chunkX, chunkZ, 16, 16, 10, 100, 64, 128, BlockMatcher.forBlock(Blocks.CACTUS));
     }
     // Work in progress
     private void genNether(World world, Random rand, int chunkX, int chunkZ) {

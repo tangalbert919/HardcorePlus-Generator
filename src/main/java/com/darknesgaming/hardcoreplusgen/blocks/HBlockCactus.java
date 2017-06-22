@@ -1,7 +1,6 @@
 package com.darknesgaming.hardcoreplusgen.blocks;
 
 import net.minecraft.block.BlockCactus;
-import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.Entity;
@@ -12,7 +11,7 @@ import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
 public class HBlockCactus extends BlockCactus {
-    String name = "hardcore_status";
+    String name = "cactus";
     public HBlockCactus() {
         super();
         setUnlocalizedName(name);

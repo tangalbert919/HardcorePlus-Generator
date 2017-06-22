@@ -2,17 +2,15 @@ package com.darknesgaming.hardcoreplusgen.handlers;
 
 import com.darknesgaming.hardcoreplusgen.blocks.HBlockCactus;
 import net.minecraft.block.Block;
-import net.minecraft.block.material.Material;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class BlockHandler {
 
-    private static Block hcactus;
+    public static Block hcactus;
     private static ItemBlock ihcactus;
 
     public static void init() {
