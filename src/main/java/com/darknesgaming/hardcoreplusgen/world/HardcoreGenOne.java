@@ -33,7 +33,7 @@ public class HardcoreGenOne implements IWorldGenerator {
     }
     private void genSurface(World world, Random rand, int chunkX, int chunkZ) {
         // addOreSpawn(Blocks.FLOWING_LAVA.getDefaultState(), world, rand, chunkX, chunkZ, 16, 16,24, 24, 10, 150, BlockMatcher.forBlock(Blocks.STONE));
-        addOreSpawn(Blocks.TNT.getDefaultState(), world, rand, chunkX, chunkZ, 16, 16, 8, 24, 0, 60, BlockMatcher.forBlock(Blocks.AIR));
+        addOreSpawn(Blocks.TNT.getDefaultState(), world, rand, chunkX, chunkZ, 16, 16, 8, 24, 0, 60, BlockMatcher.forBlock(Blocks.STONE));
         addOreSpawn(Blocks.FLOWING_LAVA.getDefaultState(), world, rand, chunkX, chunkZ, 16, 16, 12, 10, 0, 60, BlockMatcher.forBlock(Blocks.STONE));
         addOreSpawn(Blocks.MAGMA.getDefaultState(), world, rand, chunkX, chunkZ, 16, 16, 24, 70, 40, 180, BlockMatcher.forBlock(Blocks.GRASS));
     }
