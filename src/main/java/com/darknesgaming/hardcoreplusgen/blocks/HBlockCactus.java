@@ -11,12 +11,15 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
-public class HBlockCactus extends ModBlock {
-
-    protected static final AxisAlignedBB CACTUS_COLLISION_AABB = new AxisAlignedBB(0.0625D, 0.0D, 0.0625D, 0.9375D, 0.9375D, 0.9375D);
-
-    public HBlockCactus(Material mat, String name, CreativeTabs tabs, float hardness, float resistance) {
-        super(mat, name, tabs, hardness, resistance);
+public class HBlockCactus extends BlockCactus {
+    String name = "hardcore_status";
+    public HBlockCactus() {
+        super();
+        setUnlocalizedName(name);
+        setRegistryName(name);
+        setCreativeTab(CreativeTabs.DECORATIONS);
+        setHardness(0.4F);
+        setResistance(1.0F);
     }
 
     public AxisAlignedBB getCollisionBoundingBox(IBlockState blockState, IBlockAccess worldIn, BlockPos pos)

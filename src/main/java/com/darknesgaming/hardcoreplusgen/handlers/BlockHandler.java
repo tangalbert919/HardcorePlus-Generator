@@ -16,7 +16,7 @@ public class BlockHandler {
     private static ItemBlock ihcactus;
 
     public static void init() {
-        hcactus = new HBlockCactus(Material.CACTUS, "hardcore_cactus", CreativeTabs.DECORATIONS, 0.4F, 1.0F);
+        hcactus = new HBlockCactus();
         ihcactus = new ItemBlock(hcactus);
     }
     public static void register() {
