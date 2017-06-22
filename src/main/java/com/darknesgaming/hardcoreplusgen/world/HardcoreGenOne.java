@@ -33,15 +33,17 @@ public class HardcoreGenOne implements IWorldGenerator {
     }
     private void genSurface(World world, Random rand, int chunkX, int chunkZ) {
         // addOreSpawn(Blocks.FLOWING_LAVA.getDefaultState(), world, rand, chunkX, chunkZ, 16, 16,24, 24, 10, 150, BlockMatcher.forBlock(Blocks.STONE));
-        addOreSpawn(Blocks.TNT.getDefaultState(), world, rand, chunkX, chunkZ, 16, 16, 8, 24, 60, 120, BlockMatcher.forBlock(Blocks.AIR));
-        addOreSpawn(Blocks.FLOWING_LAVA.getDefaultState(), world, rand, chunkX, chunkZ, 16, 16, 12, 10, 60, 120, BlockMatcher.forBlock(Blocks.AIR));
+        addOreSpawn(Blocks.TNT.getDefaultState(), world, rand, chunkX, chunkZ, 16, 16, 8, 24, 0, 60, BlockMatcher.forBlock(Blocks.AIR));
+        addOreSpawn(Blocks.FLOWING_LAVA.getDefaultState(), world, rand, chunkX, chunkZ, 16, 16, 12, 10, 0, 60, BlockMatcher.forBlock(Blocks.STONE));
         addOreSpawn(Blocks.MAGMA.getDefaultState(), world, rand, chunkX, chunkZ, 16, 16, 24, 70, 40, 180, BlockMatcher.forBlock(Blocks.GRASS));
     }
+    // Work in progress
     private void genNether(World world, Random rand, int chunkX, int chunkZ) {
-        addOreSpawn(Blocks.FLOWING_LAVA.getDefaultState(), world, rand, chunkX, chunkZ, 16, 16, 18, 35, 10, 200, BlockMatcher.forBlock(Blocks.AIR));
+        //addOreSpawn(Blocks.FLOWING_LAVA.getDefaultState(), world, rand, chunkX, chunkZ, 16, 16, 18, 35, 10, 200, BlockMatcher.forBlock(Blocks.AIR));
     }
+    // Work in progress
     private void genEnd(World world, Random rand, int chunkX, int chunkZ) {
-        addOreSpawn(Blocks.TNT.getDefaultState(), world, rand, chunkX, chunkZ, 16, 16, 24, 35, 1, 250, BlockMatcher.forBlock(Blocks.AIR));
+        //addOreSpawn(Blocks.TNT.getDefaultState(), world, rand, chunkX, chunkZ, 16, 16, 24, 35, 1, 250, BlockMatcher.forBlock(Blocks.AIR));
     }
     private void addOreSpawn(IBlockState block, World world, Random rand, int blockXPos, int blockZPos, int maxX, int maxZ, int maxVeinSize, int chance, int minY, int maxY, Predicate<IBlockState> blockToSpawnIn) {
         int minMaxY = maxY - minY;
